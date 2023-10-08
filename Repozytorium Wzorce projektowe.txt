@@ -1,3 +1,4 @@
 Repozytorium Wzorce projektowe
 
 Laboratorium1 6.10.2023 - kalkulator 
+Laboratorium2 13.10.2023 -
