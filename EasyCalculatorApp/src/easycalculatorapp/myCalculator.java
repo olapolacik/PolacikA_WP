@@ -60,6 +60,7 @@ public class myCalculator extends javax.swing.JFrame {
         t1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         t1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
+        b7.setBackground(new java.awt.Color(186, 229, 239));
         b7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b7.setText("7");
         b7.addActionListener(new java.awt.event.ActionListener() {
@@ -68,6 +69,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b8.setBackground(new java.awt.Color(186, 229, 239));
         b8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b8.setText("8");
         b8.addActionListener(new java.awt.event.ActionListener() {
@@ -86,6 +88,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b9.setBackground(new java.awt.Color(186, 229, 239));
         b9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b9.setText("9");
         b9.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +97,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b4.setBackground(new java.awt.Color(186, 229, 239));
         b4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b4.setText("4");
         b4.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +106,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b5.setBackground(new java.awt.Color(186, 229, 239));
         b5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b5.setText("5");
         b5.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +115,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b6.setBackground(new java.awt.Color(186, 229, 239));
         b6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b6.setText("6");
         b6.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +134,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b3.setBackground(new java.awt.Color(186, 229, 239));
         b3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b3.setText("3");
         b3.addActionListener(new java.awt.event.ActionListener() {
@@ -136,6 +143,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b1.setBackground(new java.awt.Color(186, 229, 239));
         b1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b1.setText("1");
         b1.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +162,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b2.setBackground(new java.awt.Color(186, 229, 239));
         b2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b2.setText("2");
         b2.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +180,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        b0.setBackground(new java.awt.Color(186, 229, 239));
         b0.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         b0.setText("0");
         b0.addActionListener(new java.awt.event.ActionListener() {
@@ -189,6 +199,7 @@ public class myCalculator extends javax.swing.JFrame {
             }
         });
 
+        bdot.setBackground(new java.awt.Color(186, 229, 239));
         bdot.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         bdot.setText(".");
         bdot.addActionListener(new java.awt.event.ActionListener() {
