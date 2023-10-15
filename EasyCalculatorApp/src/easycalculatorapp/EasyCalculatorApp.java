@@ -8,13 +8,18 @@ package easycalculatorapp;
  *
  * @author Ola
  */
+
 public class EasyCalculatorApp {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+    CalculatorModel model = new CalculatorModel();
     
+    myCalculator view = new myCalculator();
+    
+    CalculatorController controller = new CalculatorController(model, view);
+    
+    // Przekaż kontroler do widoku
+    view.setController(controller); 
+        
+    } 
 }
