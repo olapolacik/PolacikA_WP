@@ -14,8 +14,12 @@ public class Stoper extends javax.swing.JFrame {
     static int seconds  = 0;
     static int minutes  = 0;
     static int hours  = 0;
+   
+    private Thread t;
 
-    static boolean state = true;
+    static boolean state = true;    
+    static boolean isRunning = false; // Dodajemy flagę isRunning
+
     
     public Stoper() {
         initComponents();
@@ -49,7 +53,7 @@ public class Stoper extends javax.swing.JFrame {
             }
         });
 
-        btnStop.setText("stop");
+        btnStop.setText("stop\nwzow");
         btnStop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStopActionPerformed(evt);
@@ -103,7 +107,6 @@ public class Stoper extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)))
-                .addGap(18, 18, 18)
                 .addComponent(millisecond, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -130,62 +133,64 @@ public class Stoper extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
-        state = true;
-        
-        Thread t = new Thread(){
-            public void run()
-            {
-                for(;;){
-                    if(state == true){
-                        try
-                        {
-                            sleep(1);
-                            
-                            if(milliseconds > 1000){
-                                milliseconds = 0;
-                                seconds++;
+            if (!isRunning) { // Sprawdzamy, czy stoper nie jest już uruchomiony
+            isRunning = true;
+            state = true;
+
+            Thread t = new Thread() {
+                public void run() {
+                    for (;;) {
+                        if (state == true) {
+                            try {
+                                sleep(1);
+
+                                if (milliseconds > 1000) {
+                                    milliseconds = 0;
+                                    seconds++;
+                                }
+                                if (seconds > 60) {
+                                    milliseconds = 0;
+                                    seconds = 0;
+                                    minutes++;
+                                }
+
+                                if (minutes > 60) {
+                                    milliseconds = 0;
+                                    seconds = 0;
+                                    minutes = 0;
+                                    hours++;
+                                }
+
+                                millisecond.setText(" : " + milliseconds);
+
+                                milliseconds++;
+
+                                second.setText(" : " + seconds);
+                                minute.setText(" : " + minutes);
+                                hour.setText("" + hours);
+
+                            } catch (InterruptedException e) {
+                                break;
                             }
-                            if(seconds > 60){
-                                milliseconds = 0;
-                                seconds = 0;
-                                minutes++;
-                            }
-                            
-                            if(minutes > 60){
-                              milliseconds = 0;
-                              seconds = 0;
-                              minutes = 0;
-                              hours++;
-                            }
-                            
-                            millisecond.setText(" : "+ milliseconds);
-                            
-                            milliseconds++;
-                            
-                            second.setText(" : "+seconds);
-                            minute.setText(" : " +minutes);
-                            hour.setText(""+hours);
-                        
-                        }
-                        catch(Exception e){
-                          //komuikat o wyjatku  
+                        } else {
+                            break;
                         }
                     }
-                                               
-                    else
-                    {
-                        break;
-                    }
-                    
+                    isRunning = false; // Po zakończeniu wątku ustawiamy isRunning na false
                 }
-            }
-        };
-        t.start();
+            };
+            t.start();
+        }
+        
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopActionPerformed
         // TODO add your handling code here:
-        state = false;        
+        state = false;    
+        // Przerwij wątek
+        if (t != null) {
+            t.interrupt();
+        }
       
     }//GEN-LAST:event_btnStopActionPerformed
 
