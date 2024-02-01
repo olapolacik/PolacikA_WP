@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.badlogicgames.gdx",
+    "module": "gdx-jnigen-loader",
+    "version": "2.3.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.3",
+      "buildId": "bje5n463ljaolflo4fdmvfuweq"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "gdx-jnigen-loader-2.3.1.jar",
+          "url": "gdx-jnigen-loader-2.3.1.jar",
+          "size": 6702,
+          "sha512": "4e5b16ac160fc0dc3ee01dfc07034fcb2d9214c452b15eaa6b4faa43f1da4d384d027e8512bb1cd104ff8a7a687eef932cb8cdf49724d5aef7eab61886872709",
+          "sha256": "6490dda225a61c7602c27bbec4e481137ff595f8ce0b2ddba414f0c3406aee60",
+          "sha1": "2d472f69243631fbcb3d4c3f93dd2e137a6cb084",
+          "md5": "a3360fe5bf2caa1446bd286afa4bba96"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gdx-jnigen-loader-2.3.1.jar",
+          "url": "gdx-jnigen-loader-2.3.1.jar",
+          "size": 6702,
+          "sha512": "4e5b16ac160fc0dc3ee01dfc07034fcb2d9214c452b15eaa6b4faa43f1da4d384d027e8512bb1cd104ff8a7a687eef932cb8cdf49724d5aef7eab61886872709",
+          "sha256": "6490dda225a61c7602c27bbec4e481137ff595f8ce0b2ddba414f0c3406aee60",
+          "sha1": "2d472f69243631fbcb3d4c3f93dd2e137a6cb084",
+          "md5": "a3360fe5bf2caa1446bd286afa4bba96"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gdx-jnigen-loader-2.3.1-javadoc.jar",
+          "url": "gdx-jnigen-loader-2.3.1-javadoc.jar",
+          "size": 24653,
+          "sha512": "3888d6b9995afc4e4acffdb14af72bed90ee1884ff730926fa777b8b0ff1a55280927a8687c489acb1e28e900175cdac7533217453a498392fb50ba6456690b2",
+          "sha256": "dc1cccef46347494dead58b803fe6c21c419a3b739f725d1154b39d9712942a9",
+          "sha1": "fb385783eebaf04e9f48392dd76e0b46575d5647",
+          "md5": "d8ef9179e2ba970ba07d2c93a88f8199"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gdx-jnigen-loader-2.3.1-sources.jar",
+          "url": "gdx-jnigen-loader-2.3.1-sources.jar",
+          "size": 5315,
+          "sha512": "38b2a4dca53be1dc35dc5c3d36f974e9878a17bc1a6c636505cf3978086df9b46cee890b0b300d78608a00e3b3575ca63694d3186acc48932970a81af6098aef",
+          "sha256": "ef3569d1e5012102ba439f3a323756257125baee9c043d520896df5bfbaf2c9d",
+          "sha1": "8228a038af98f2d0fa7b23ea7b4fa330af832305",
+          "md5": "d86627b1215f8ffa1833a47133dad4e5"
+        }
+      ]
+    }
+  ]
+}

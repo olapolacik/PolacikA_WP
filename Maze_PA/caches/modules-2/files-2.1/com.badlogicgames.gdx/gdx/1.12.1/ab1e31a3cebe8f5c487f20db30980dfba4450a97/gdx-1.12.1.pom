@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.badlogicgames.gdx</groupId>
+  <artifactId>gdx</artifactId>
+  <version>1.12.1</version>
+  <name>libGDX</name>
+  <description>Android/Desktop/iOS/HTML5 game development framework</description>
+  <url>https://github.com/libgdx/libgdx</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>libGDX Developers</id>
+      <url>https://github.com/libgdx/libgdx/graphs/contributors</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:libgdx/libgdx.git</connection>
+    <developerConnection>scm:git@github.com:libgdx/libgdx.git</developerConnection>
+    <url>https://github.com/libgdx/libgdx</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.badlogicgames.gdx</groupId>
+      <artifactId>gdx-jnigen-loader</artifactId>
+      <version>2.3.1</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

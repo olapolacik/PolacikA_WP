@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.badlogicgames.gdx",
+    "module": "gdx",
+    "version": "1.12.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx-jnigen-loader",
+          "version": {
+            "requires": "2.3.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gdx-1.12.1.jar",
+          "url": "gdx-1.12.1.jar",
+          "size": 2041345,
+          "sha512": "4dddb4c7aa32a96b9d1eb252c5d823f0b24711b015fb6e6f925737b8d864635f65f517f01ecd5ae39f4225e42d3cad0e49fa8ed789d7b683efba461f31050d30",
+          "sha256": "8d3209e948211fde9cdacc2b01faced323e548aa52ef78e5c760845a88746970",
+          "sha1": "0a2d066c09329c457045c284c42d6f37122840aa",
+          "md5": "21dd9b4bf25d1ecf88e06e7f3ac9cf2e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx-jnigen-loader",
+          "version": {
+            "requires": "2.3.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gdx-1.12.1.jar",
+          "url": "gdx-1.12.1.jar",
+          "size": 2041345,
+          "sha512": "4dddb4c7aa32a96b9d1eb252c5d823f0b24711b015fb6e6f925737b8d864635f65f517f01ecd5ae39f4225e42d3cad0e49fa8ed789d7b683efba461f31050d30",
+          "sha256": "8d3209e948211fde9cdacc2b01faced323e548aa52ef78e5c760845a88746970",
+          "sha1": "0a2d066c09329c457045c284c42d6f37122840aa",
+          "md5": "21dd9b4bf25d1ecf88e06e7f3ac9cf2e"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gdx-1.12.1-javadoc.jar",
+          "url": "gdx-1.12.1-javadoc.jar",
+          "size": 6898111,
+          "sha512": "c6e9b3cb747206991243e2b38b76c87998d72e9b39d5f4275122c3456488421ba338f84c98edbf7bc304cb000826ae483f11a34cade8a93649d07ea277aae01e",
+          "sha256": "720d4664e7b03d76c513ac827fd53f99be98e2b24f87d491807fbdc13e3262a8",
+          "sha1": "942ca06f18b83f84a35dfa6e9bd2022c39155048",
+          "md5": "43f0bab0cdba9f2db1ad070700940466"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gdx-1.12.1-sources.jar",
+          "url": "gdx-1.12.1-sources.jar",
+          "size": 1370681,
+          "sha512": "2938cba10a9a9a0672265b20d0cd4ecbe70e490cb2557a7a12ae02066062bbf5d0f5df0ae5c0a07c92d22e91a5e3b53115d2b3070ccb45a92026f0159517ab40",
+          "sha256": "6274b536df59715507195d19c2778c25e2402662169b11fc141500118a1b1525",
+          "sha1": "ab23b5d3982f3d89ba30f1c4db509aa7568c3024",
+          "md5": "0246c74dade3c9d10a7ad17c0937ce37"
+        }
+      ]
+    }
+  ]
+}

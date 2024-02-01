@@ -1,0 +1,73 @@
+
+### Klasa `MapSide` (abstrakcyjna)
+- Metoda `enter()`: Ta metoda zostanie zaimplementowana w klasach dziedziczących i będzie określać, co się dzieje, gdy użytkownik próbuje wejść na daną stronę (ścianę, drzwi).
+
+### Klasa `Room` (dziedziczy po `MapSide`)
+- Pole statyczne `numberOfRooms`: Licznik pokoi, który będzie przypisywał numery pokoi.
+- Metoda `setSide(String kierunek, MapSide element)`: Ustawia element (ściana lub drzwi) w określonym kierunku.
+- Metoda `getSide(String kierunek)`: Sprawdza, czy w danym kierunku znajduje się przejście (drzwi) lub ściana.
+- Metoda `roomNumber()`: Zwraca numer pokoju.
+
+### Klasa `Wall` (dziedziczy po `MapSide`)
+- Metoda `enter()`: Obecnie nie wykonuje żadnych działań. Może pozostać pusta.
+
+### Klasa `Door` (dziedziczy po `MapSide`)
+- Pole `room1` i `room2`: Referencje do dwóch pokoi, które są połączone drzwiami.
+- Metoda `enter()`: Określa, co się dzieje, gdy użytkownik próbuje wejść przez drzwi.
+- Metoda `isOpen()`: Sprawdza, czy drzwi są otwarte.
+- Metoda `overSideFrom(int numerPokoju)`: Zwraca numer pokoju, do którego prowadzą drzwi od strony `numerPokoju`.
+
+### Klasa `Maze` (dziedziczy po `Room`)
+- Metoda `addRoom(Room pokoj)`: Dodaje pokój do labiryntu.
+- Metoda `roomNumber()`: Zwraca numer pokoju.
+
+W tej poprawionej strukturze zarówno `Room`, jak i `Maze` dziedziczą po `MapSide`, jak zostało to określone w twoim pierwotnym pytaniu. Teraz obie te klasy zawierają funkcjonalność związane z interakcją z użytkownikiem na poziomie mapy (ściany, drzwi) oraz zarządzania pokojami w labiryncie.
+
+
+
+na podstawie plikow MapSite.java, Maze.java, Room.java, Door.java oraz Wall.java utworz automatyczne tworzenie sie labiryntu za pomoca wzorca projektowego Builder. Interfejs powinien zawierac metody
+     void buildMaze();
+    void buildDoor(int roomNr1, int roomNr2);
+    void buildRoom(int number, int x, int y);
+    Maze getMaze(); 
+
+oraz klase ConcreteBuilder ktora jest implementacja interfejsu MazeBuilder. w niej znajda sie implementacje powyzszych metod
+
+metoda buildMaze tworzy labirynt, czyli jest to rozpoczecie budowania nowego labiryntu
+
+metoda buildDoor powinna dzialac na zasadzie ze  przekazujemy jej informacje o numerze dwoch pokoi pomiedzy ktorymi maja zostac utworzone. zakladamy ze dwa pokoje sasiaduja ze soba, jezeli nie sasiaduja to bedzie to nieprawidlowe. powinien dzialac na zasadzie klasy Door.java
+
+metoda buildRoom   tworzy pokoj skladajacy sie z 4 scian, o podanym numerze w podanym polozeniu x i y
+
+metoda Maze getMaze() zwraca gotowy produkt
+
+Builder zwraca obiekt Maze.
+W tym obiekcie Maze trzeba dodać jeszcze metodę
+public MazeNod0 getRootNode() { return nodes[0][0]; }
+wtedy ludzik będzie startował z lewego dolnego rogu.
+Jak wciśniesz klawisz kierunku to:
+- sprawdzasz czy to są drzwi MazeNode.isDoor(side)
+- traktujesz jako bieżący klocek sąsiada czyli MazeNode.neighbors[side]
+
+Jeżeli uznasz prawy dolny róg to w Maze możesz dodać metodę
+public MazeNode getFinalNode() {
+int yCount = nodes.length;
+int xCount = nodes[0].length;
+return nodes[yCount][xCount]; }
+o po każdym ruchu sprawdzać czy current node to ta sama instancja co final node.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
