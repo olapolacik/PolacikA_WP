@@ -34,7 +34,7 @@ public class MazeNode {
         return new Point(bounds.x + bounds.width / 2, bounds.y + bounds.height / 2);
     }
 
-    // Constructor.
+    // Konstruktor
     public MazeNode(int x, int y, int realWidth, int realHeight) {
         bounds = new Rectangle(x, y, 1, 1);
         this.realWidth = realWidth;
@@ -127,16 +127,12 @@ public class MazeNode {
         shapeRenderer.setColor(0f, 0f, 0f, 1f);
         switch (side) {
             case north:
-                // Draw the door in the north direction.
                 break;
             case south:
-                // Draw the door in the south direction.
                 break;
             case east:
-                // Draw the door in the east direction.
                 break;
             case west:
-                // Draw the door in the west direction.
                 break;
         }
     }

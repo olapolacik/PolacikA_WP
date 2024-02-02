@@ -37,9 +37,6 @@ public class MazeGame extends ApplicationAdapter {
     private Texture catLEFT;
     private Texture catTexture;
     private Texture portal;
-    private Texture bomb;
-    private List<MazeBomb> bombs;
-
 
     @Override
     public void create() {
@@ -74,10 +71,7 @@ public class MazeGame extends ApplicationAdapter {
         catRIGHT = new Texture("cat_right.png");
         catLEFT = new Texture("cat_left.png");
         portal = new Texture("portal.png");
-        bomb = new Texture("bomb.png");
-
         catTexture = catUP;
-
 
     }
 

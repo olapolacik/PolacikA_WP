@@ -14,9 +14,11 @@ public class Maze {
         this.nodes = nodes;
     }
 
+    
     public MazeNode[][] getNodes() {
         return nodes;
     }
+
 
     public void draw(ShapeRenderer shapeRenderer)
     {
